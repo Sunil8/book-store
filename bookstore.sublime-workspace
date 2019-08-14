@@ -1,0 +1,423 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ht",
+				"html5\tSimple HTML5 Boilerplate"
+			],
+			[
+				"med",
+				"MEDIA_URL"
+			],
+			[
+				"passw",
+				"PASSWORD_RESET_TIMEOUT_DAYS"
+			],
+			[
+				"Abs",
+				"AbstractBaseUser\tmodule"
+			],
+			[
+				"static",
+				"static_cdn\tabc"
+			],
+			[
+				"BSe",
+				"BASE_DIR\tabc"
+			],
+			[
+				"base",
+				"BASE_DIR\tstatement"
+			],
+			[
+				"STAT",
+				"STATIC_ROOT"
+			],
+			[
+				"MEDIA",
+				"MEDIA_URL"
+			],
+			[
+				"cl",
+				"class\tNew Class"
+			],
+			[
+				"class",
+				"classmethod\tclass"
+			],
+			[
+				"pa",
+				"path\tmodule"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/umit/Desktop/practicals/osd/index.html",
+			"settings":
+			{
+				"buffer_size": 320,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"terminus",
+				"Preferences: Terminal Key Bindings – User"
+			],
+			[
+				"terminus:",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"Package Control: Install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"ANF: New File"
+			],
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: I",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 150.0,
+		"history":
+		[
+			"terminus",
+			"python manage.py runserver",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/media/umit/Files/projects/ebook_store",
+		"/media/umit/Files/projects/ebook_store/bookstore",
+		"/media/umit/Files/projects/ebook_store/bookstore/users"
+	],
+	"file_history":
+	[
+		"/home/umit/Desktop/practicals/osd/sum_of_n_numbers.pl",
+		"/media/umit/Files/projects/ebook_store/bookstore/users/models.py",
+		"/media/umit/Files/projects/ebook_store/.gitignore",
+		"/home/umit/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/media/umit/Files/projects/ebook_store/book_store",
+		"/media/umit/Files/BCS/OSD/Resources/2_WebServer Setup/php/10_sort_array.php",
+		"/media/umit/Files/BCS/OSD/Resources/2_WebServer Setup/php/14_fileupload.php",
+		"/media/umit/Files/projects/ebook_store/bookstore/bookstore/settings.py",
+		"/media/umit/Files/BCS/OSD/Resources/2_WebServer Setup/php/13_request.php",
+		"/media/umit/Files/BCS/OSD/Resources/2_WebServer Setup/mysql/1_import_db.php",
+		"/home/umit/Desktop/practicals/osd/subtract/EngienCompute.java",
+		"/home/umit/Desktop/practicals/opengl/lineEquations.cpp",
+		"/home/umit/Desktop/main.cpp",
+		"/media/umit/Files/projects/django_projects/project_blog/blog/accounts/admin.py",
+		"/media/umit/Files/projects/django_projects/project_blog/blog/accounts/models.py",
+		"/media/umit/Files/projects/django_projects/project_blog/blog/blog/urls.py",
+		"/media/umit/Files/projects/django_projects/project_blog/blog/blog/wsgi.py",
+		"/media/umit/Files/projects/django_projects/project_blog/blog/accounts/apps.py",
+		"/media/umit/Files/projects/django_projects/project_blog/blog/blog/settings.py",
+		"/media/umit/Files/projects/django_projects/blog/blog/posts/migrations/0001_initial.py",
+		"/media/umit/Files/projects/django_projects/blog/blog/db.sqlite3",
+		"/media/umit/Files/projects/django_projects/blog/blog/posts/templates/posts/base.html",
+		"/home/umit/Desktop/main.py",
+		"/home/umit/Desktop/index.html",
+		"/home/umit/.config/sublime-text-3/Packages/User/AdvancedNewFile.sublime-settings",
+		"/home/umit/Desktop/script.js",
+		"/home/umit/.config/sublime-text-3/Packages/JavaScript Completions/Default (Linux).sublime-keymap",
+		"/home/umit/.config/sublime-text-3/Packages/JavaScript Completions/JavaScript-Completions.sublime-settings"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/umit/Desktop/practicals/osd/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 320,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								277,
+								277
+							]
+						],
+						"settings":
+						{
+							"SL.14.region_keys":
+							[
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+									"1":
+									[
+										0,
+										1
+									]
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 55.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 156.0
+	},
+	"output.Terminus":
+	{
+		"height": 280.0
+	},
+	"output.Terminus 2":
+	{
+		"height": 156.0
+	},
+	"output.Terminus 3":
+	{
+		"height": 156.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bookstore.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 254.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
