@@ -37,6 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # local apps 
+    'books.apps.BooksConfig',
+    'users.apps.UsersConfig',
+    'comments.apps.CommentsConfig',
+    'likes.apps.LikesConfig',
 ]
 
 MIDDLEWARE = [
@@ -108,7 +114,7 @@ LOGIN_REDIRECT_URL = '/accounts/profile/'
 LOGIN_URL = '/accounts/login/'
 LOGOUT_URL = '/accounts/logout/'
 LOGOUT_REDIRECT_URL = ''
-PASSWORD_RESET_TIMEOUT_DAYS = 1
+PASSWORD_RESET_TIMEOUT_DAYS = 7
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
@@ -128,7 +134,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-MEDIA_URL = '/MEDIA/'
+MEDIA_URL = '/media/'
 
 # look for static files beyond specific apps
 STATICFILES_DIRS = [
