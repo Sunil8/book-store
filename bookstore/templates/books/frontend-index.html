@@ -1,0 +1,390 @@
+{% extends 'polls/base.html' %}
+{% block main_content %}
+{% load staticfiles %}
+
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <!--    <a class="navbar-brand" href="#">LOGO</a>-->
+    <img src="{% static 'img/favicon.ico' %}">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Browse Books</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <!--            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>-->
+        </form>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Register</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<main role="main" class="container">
+
+    <div class="intro-upper-text text-center mt-5 pt-5">
+        <h1>Download Book: Sunway Book Store</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    </div>
+
+    <!--Start of popular book intro with star-->
+    <section class="popular-book">
+        <div class="star-download">
+            <h2>
+                <i class="fa fa-star"></i>
+                Popular Books
+            </h2>
+        </div>
+    </section>
+    <!--End of popular book intro with star-->
+
+
+    <!--Start of popular book showcase-->
+    <section class="box-book-showcase">
+        <div class="browse-book col-sm-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col book-showcase">
+                        <img src="{% static 'img/artificial-intelligence-by-examples.jpg' %}">
+                        <!--Start of intro text after hover the image-->
+                        <figcaption class="middle-text hidden-xs hidden-sm">
+                        <i class="fa fa-star"></i>
+                            <h4 class="text">4.5/10</h4>
+                            <h4 class="book-category">Nobel</h4>
+                            <span class="button-green-download2-big">View Details</span>
+                        </figcaption>
+                         <!--End of intro text after hover the image-->
+                        <p class="book-title">Artificial Intellence By Example</p>
+                        <p class="book-year">2019</p>
+                    </div>                   
+                    <div class="col book-showcase">
+                        <img src="{% static 'img/artificial-intelligences.jpg' %}">
+                         <!--Start of intro text after hover the image-->
+                        <figcaption class="middle-text hidden-xs hidden-sm">
+                        <i class="fa fa-star"></i>
+                            <h4 class="rating">4.5/10</h4>
+                            <h4 class="book-category">Nobel</h4>
+                            <span class="button-green-download2-big">View Details</span>
+                        </figcaption>
+                         <!--End of intro text after hover the image-->
+                        <p class="book-title">Artificial Intellence</p>
+                        <p class="book-year">2019</p>
+                    </div>
+                    <div class="col book-showcase">
+                        <img src="{% static 'img/crying-girl.jpg' %}">
+                         <!--Start of intro text after hover the image-->
+                        <figcaption class="middle-text hidden-xs hidden-sm">
+                            <i class="fa fa-star"></i>
+                            <h4 class="rating">4.5/10</h4>
+                            <h4 class="book-category">Nobel</h4>
+                            <span class="button-green-download2-big">View Details</span>
+                        </figcaption>
+                         <!--End of intro text after hover the image-->
+                        <p class="book-title">Crying Girl</p>
+                        <p class="book-year">2019</p>
+                    </div>
+                    <div class="col book-showcase">
+                        <img src="{% static 'img/eloquent-javascript.jpg' %}">
+                         <!--Start of intro text after hover the image-->
+                        <figcaption class="middle-text hidden-xs hidden-sm">
+                            <i class="fa fa-star"></i>
+                            <h4 class="rating">4.5/10</h4>
+                            <h4 class="book-category">Nobel</h4>
+                            <span class="button-green-download2-big">View Details</span>
+                        </figcaption>
+                         <!--End of intro text after hover the image-->
+                        <p class="book-title">Eloquent Javascript</p>
+                        <p class="book-year">2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of popular book showcase-->
+
+<!--Start of message box-->
+<section class="message-box">
+    <div class="message-box-bordered">
+        <div class="title">
+        <h1>Preface</h1>
+        </div>
+        <p class="blue">
+            <span>DEAR READERS!</span>
+        </p>
+        <p>
+            Embark on an enchanting adventure that takes place in a re-imagined old church under a stand of shady oaks. <br>Wander, with intent or aimlessly, through this truly unique bookstore and you will discover a vast<br> and constantly changing inventory of fine and unusual books, with a wide range of subjects including philosophy, the arts,<br> travel, adventure, science, psychology, religion, the classics and much more. We also feature carefully selected children's literature, <br>perfect-condition hardcovers, first editions, and rare spiritual tomes, along with a robust selection of unique and eclectic gifts. <br><br>Come share our love of books and curiosities at BookEnds Bookstore!
+         </p>
+        
+    <div class="text-center">
+        <button type="button" class="btn btn-success text-center">Success</button>    
+    </div>
+    </div>
+</section>
+<!--End of message box-->    
+    
+     <!--Start of popular book intro with star-->
+    <section class="latest-book">
+        <div class="latest-download">
+            <div class="container">
+            <div class="row">
+                <h2 class="latest-book-intro col-md-5">
+                <i class="fa fa-star"></i>
+                Latest Books List
+            </h2>
+            <h5 class="latest-book-intro col-md-6">
+                <a href="login.html"> Browse All >></a>
+            </h5>
+                </div>
+            </div>
+            </div>
+    </section>
+    <!--End of popular book intro with star-->
+
+    <!--Start of latest book store-->
+    <section class="box-book-showcase">
+        <div class="browse-book col-sm-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col book-showcase">
+                        <img src="{% static 'img/girl-opinion.jpg' %}">
+                        <!--Start of intro text after hover the image-->
+                        <figcaption class="middle-text hidden-xs hidden-sm">
+                        <i class="fa fa-star"></i>
+                            <h4 class="text">4.5/10</h4>
+                            <h4 class="book-category">Nobel</h4>
+                            <span class="button-green-download2-big">View Details</span>
+                        </figcaption>
+                         <!--End of intro text after hover the image-->
+                        <p class="book-title">Girls Opinion</p>
+                        <p class="book-year">2019</p>
+                    </div>                   
+                    <div class="col book-showcase">
+                        <img src="{% static 'img/javascript-for-web-developer.jpg' %}">
+                         <!--Start of intro text after hover the image-->
+                        <figcaption class="middle-text hidden-xs hidden-sm">
+                        <i class="fa fa-star"></i>
+                            <h4 class="rating">4.5/10</h4>
+                            <h4 class="book-category">Nobel</h4>
+                            <span class="button-green-download2-big">View Details</span>
+                        </figcaption>
+                         <!--End of intro text after hover the image-->
+                        <p class="book-title">Javascript for Web Developers</p>
+                        <p class="book-year">2019</p>
+                    </div>
+                    <div class="col book-showcase">
+                        <img src="{% static 'img/mastering-python.jpg' %}">
+                         <!--Start of intro text after hover the image-->
+                        <figcaption class="middle-text hidden-xs hidden-sm">
+                            <i class="fa fa-star"></i>
+                            <h4 class="rating">4.5/10</h4>
+                            <h4 class="book-category">Nobel</h4>
+                            <span class="button-green-download2-big">View Details</span>
+                        </figcaption>
+                         <!--End of intro text after hover the image-->
+                        <p class="book-title">Mastering in Python</p>
+                        <p class="book-year">2019</p>
+                    </div>
+                    <div class="col book-showcase">
+                        <img src="{% static 'img/python-for-everyone.jpg' %}">
+                         <!--Start of intro text after hover the image-->
+                        <figcaption class="middle-text hidden-xs hidden-sm">
+                            <i class="fa fa-star"></i>
+                            <h4 class="rating">4.5/10</h4>
+                            <h4 class="book-category">Nobel</h4>
+                            <span class="button-green-download2-big">View Details</span>
+                        </figcaption>
+                         <!--End of intro text after hover the image-->
+                        <p class="book-title">Python for Everyone</p>
+                        <p class="book-year">2019</p>
+                    </div><div class="col book-showcase">
+                        <img src="{% static 'img/nepal-map-book.jpg' %}">
+                        <!--Start of intro text after hover the image-->
+                        <figcaption class="middle-text hidden-xs hidden-sm">
+                        <i class="fa fa-star"></i>
+                            <h4 class="text">4.5/10</h4>
+                            <h4 class="book-category">Nobel</h4>
+                            <span class="button-green-download2-big">View Details</span>
+                        </figcaption>
+                         <!--End of intro text after hover the image-->
+                        <p class="book-title">Nepal Map Book</p>
+                        <p class="book-year">2019</p>
+                    </div>                   
+                    <div class="col book-showcase">
+                        <img src="{% static 'img/whiskey-book.jpg' %}">
+                         <!--Start of intro text after hover the image-->
+                        <figcaption class="middle-text hidden-xs hidden-sm">
+                        <i class="fa fa-star"></i>
+                            <h4 class="rating">4.5/10</h4>
+                            <h4 class="book-category">Nobel</h4>
+                            <span class="button-green-download2-big">View Details</span>
+                        </figcaption>
+                         <!--End of intro text after hover the image-->
+                        <p class="book-title">Whishkey Book
+                        </p>
+                        <p class="book-year">2019</p>
+                    </div>
+                    <div class="col book-showcase">
+                        <img src="{% static 'img/BDMS2e_500x617px.jpg' %}">
+                         <!--Start of intro text after hover the image-->
+                        <figcaption class="middle-text hidden-xs hidden-sm">
+                            <i class="fa fa-star"></i>
+                            <h4 class="rating">4.5/10</h4>
+                            <h4 class="book-category">Nobel</h4>
+                            <span class="button-green-download2-big">View Details</span>
+                        </figcaption>
+                         <!--End of intro text after hover the image-->
+                        <p class="book-title">Sample Book Design</p>
+                        <p class="book-year">2019</p>
+                    </div>
+                    <div class="col book-showcase">
+                        <img src="{% static 'img/book-2020.png' %}">
+                         <!--Start of intro text after hover the image-->
+                        <figcaption class="middle-text hidden-xs hidden-sm">
+                            <i class="fa fa-star"></i>
+                            <h4 class="rating">4.5/10</h4>
+                            <h4 class="book-category">Nobel</h4>
+                            <span class="button-green-download2-big">View Details</span>
+                        </figcaption>
+                         <!--End of intro text after hover the image-->
+                        <p class="book-title">Book Title</p>
+                        <p class="book-year">2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of latest book store-->
+    
+     <!--Start of upcomming book intro with star-->
+    <section class="upcoming-book">
+        <div class="upcoming-download">
+            <div class="container">
+            <div class="row">
+                <h2 class="upcoming-book-intro col-md-5">
+                <i class="fa fa-star"></i>
+                Upcomming Books List
+            </h2>
+                <h5 class="upcoming-book-intro col-md-6">
+                Request a Book >>
+            </h5>
+                </div>
+            </div>
+            
+           
+        </div>
+    </section>
+    <!--End of upcoming book intro with star-->
+
+
+    <!--Start of upcoming book store-->
+    <section class="box-book-showcase">
+        <div class="browse-book col-sm-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col book-showcase">
+                        <img src="{% static 'img/Book-cover-page-4-CRC.png' %}">
+                        <!--Start of intro text after hover the image-->
+                        <figcaption class="middle-text hidden-xs hidden-sm">
+                        <i class="fa fa-star"></i>
+                            <h4 class="text">4.5/10</h4>
+                            <h4 class="book-category">Nobel</h4>
+                            <span class="button-green-download2-big">View Details</span>
+                        </figcaption>
+                         <!--End of intro text after hover the image-->
+                        <p class="book-title"> Title Cover Page Book</p>
+                        <p class="book-year">2019</p>
+                    </div>                   
+                    <div class="col book-showcase">
+                        <img src="{% static 'img/EverlastingJoy.jpg' %}">
+                         <!--Start of intro text after hover the image-->
+                        <figcaption class="middle-text hidden-xs hidden-sm">
+                        <i class="fa fa-star"></i>
+                            <h4 class="rating">4.5/10</h4>
+                            <h4 class="book-category">Nobel</h4>
+                            <span class="button-green-download2-big">View Details</span>
+                        </figcaption>
+                         <!--End of intro text after hover the image-->
+                        <p class="book-title"> Everlasting Book</p>
+                        <p class="book-year">2019</p>
+                    </div>
+                    <div class="col book-showcase">
+                        <img src="{% static 'img/life-book.jpg' %}">
+                         <!--Start of intro text after hover the image-->
+                        <figcaption class="middle-text hidden-xs hidden-sm">
+                            <i class="fa fa-star"></i>
+                            <h4 class="rating">4.5/10</h4>
+                            <h4 class="book-category">Nobel</h4>
+                            <span class="button-green-download2-big">View Details</span>
+                        </figcaption>
+                         <!--End of intro text after hover the image-->
+                        <p class="book-title"> Life Book</p>
+                        <p class="book-year">2019</p>
+                    </div>
+                    <div class="col book-showcase">
+                        <img src="{% static 'img/The_Girl_Of_Ink_and_Stars__.jpg' %}">
+                         <!--Start of intro text after hover the image-->
+                        <figcaption class="middle-text hidden-xs hidden-sm">
+                            <i class="fa fa-star"></i>
+                            <h4 class="rating">4.5/10</h4>
+                            <h4 class="book-category">Nobel</h4>
+                            <span class="button-green-download2-big">View Details</span>
+                        </figcaption>
+                         <!--End of intro text after hover the image-->
+                        <p class="book-title"> The Girl Ink</p>
+                        <p class="book-year">2019</p>
+                    </div>            
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of upcoming book store-->
+</main><!-- /.container -->
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
