@@ -77,11 +77,24 @@ WSGI_APPLICATION = 'bookstore.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE' : 'django.db.backends.mysql',
+        'USER' : 'root',
+        'PASSWORD':'',
+        'NAME' : 'petrol',
+        'HOST':'localhost',
+        'PORT' : '3306',
         'OPTIONS': {
-            'read_default_file':'/etc/mysql/my.cnf'
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+            # Tell MySQLdb to connect with 'utf8mb4' character set
+            'charset': 'utf8mb4',
         },
+        # Tell Django to build the test database with the 'utf8mb4' character set
+        'TEST': {
+            'CHARSET': 'utf8mb4',
+            'COLLATION': 'utf8mb4_unicode_ci',
+        }
     }
+    
 }
 
 
