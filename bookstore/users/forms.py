@@ -4,7 +4,7 @@ from django import forms
 from users.models import User
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
 
-class UserCreationForm(forms.ModelForm):
+class SignUpForm(forms.ModelForm):
     """A from for creating new users."""
     password1 = forms.CharField(
         label = 'Password', 
@@ -17,22 +17,22 @@ class UserCreationForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ('email', 'password1', 'password2')
+        fields = ('username','email', 'password1', 'password2')
 
     def clean_password2(self):
         password1 = self.cleaned_data.get("password1")
-        password1 = self.cleaned_data.get("password2")
+        password2 = self.cleaned_data.get("password2")
 
         if password1 and password2 and password1 != password2:
             raise forms.ValidationError("Passwords dont' match")
 
         return password2
 
-    def save(self, commit = True):
-        user = super().save(commit = False)
+    def save(self, commit = True, **kwargs):
+        user = super(SignUpForm,self).save(commit = False, **kwargs)
         user.set_password(self.cleaned_data.get('password1'))
         if commit:
-            user.save()
+            user.save(commit = True, **kwargs)
         return user
 
 class UserChangeForm(forms.ModelForm):
@@ -51,3 +51,7 @@ class UserChangeForm(forms.ModelForm):
 
     def clean_password(self):
         return self.initial["password"]
+
+class UserLoginForm(forms.Form):
+    email = forms.EmailField()
+    password = forms.CharField(widget = forms.PasswordInput)

@@ -10,7 +10,6 @@ class UserManager(BaseUserManager):
         """
         Creates and saves a User with the given email and password.
         """
-
         if not email:
             raise ValueError('Users must have an email address.')
 
@@ -46,7 +45,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(_('active'),default = False)
     # avatar = models.ImageField(upload_to = 'avatars', null = True, blank = True)
     USERNAME_FIELD = 'email'
-    REQURED_FIELDS = ['email', 'passsword',]
+    REQURED_FIELDS = ['username', 'email', 'passsword',]
 
     @property
     def is_staff(self):

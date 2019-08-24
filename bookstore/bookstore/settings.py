@@ -43,6 +43,10 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'comments.apps.CommentsConfig',
     'likes.apps.LikesConfig',
+    'dashboard.apps.DashboardConfig',
+
+    # remote apps
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -129,7 +133,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
