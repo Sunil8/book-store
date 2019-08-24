@@ -28,12 +28,12 @@ class SignUpForm(forms.ModelForm):
 
         return password2
 
-    def save(self, commit = True, **kwargs):
-        user = super(SignUpForm,self).save(commit = False, **kwargs)
-        user.set_password(self.cleaned_data.get('password1'))
-        if commit:
-            user.save(commit = True, **kwargs)
-        return user
+    # def save(self, commit = True, **kwargs):
+    #     user = super(SignUpForm,self).save(commit = False, **kwargs)
+    #     user.set_password(self.cleaned_data.get('password1'))
+    #     if commit:
+    #         user.save(commit = True, **kwargs)
+    #     return user
 
 class UserChangeForm(forms.ModelForm):
     """ A from for updating users."""
