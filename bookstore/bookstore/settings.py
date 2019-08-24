@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE' : 'django.db.backends.mysql',
         'USER' : 'root',
         'PASSWORD':'',
-        'NAME' : 'petrol',
+        'NAME' : 'book_store',
         'HOST':'localhost',
         'PORT' : '3306',
         'OPTIONS': {
@@ -117,12 +117,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTH_USER_MODEL = 'users.User'
-LOGIN_REDIRECT_URL = '/accounts/profile/'
-LOGIN_URL = '/accounts/login/'
-LOGOUT_URL = '/accounts/logout/'
-LOGOUT_REDIRECT_URL = ''
-PASSWORD_RESET_TIMEOUT_DAYS = 1
+# AUTH_USER_MODEL = 'users.User'
+# LOGIN_REDIRECT_URL = '/accounts/profile/'
+# LOGIN_URL = '/accounts/login/'
+# LOGOUT_URL = '/accounts/logout/'
+# LOGOUT_REDIRECT_URL = ''
+# PASSWORD_RESET_TIMEOUT_DAYS = 1
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
