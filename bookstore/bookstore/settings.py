@@ -37,7 +37,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'books',
+
+
+    # local apps 
+    'books.apps.BooksConfig',
+    'users.apps.UsersConfig',
+    'comments.apps.CommentsConfig',
+    'likes.apps.LikesConfig',
+    'dashboard.apps.DashboardConfig',
+
+    # remote apps
+    'crispy_forms',
+
 ]
 
 MIDDLEWARE = [
@@ -117,12 +128,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# AUTH_USER_MODEL = 'users.User'
-# LOGIN_REDIRECT_URL = '/accounts/profile/'
-# LOGIN_URL = '/accounts/login/'
-# LOGOUT_URL = '/accounts/logout/'
-# LOGOUT_REDIRECT_URL = ''
-# PASSWORD_RESET_TIMEOUT_DAYS = 1
+
+AUTH_USER_MODEL = 'users.User'
+LOGIN_REDIRECT_URL = '/accounts/profile/'
+LOGIN_URL = '/accounts/login/'
+LOGOUT_URL = '/accounts/logout/'
+LOGOUT_REDIRECT_URL = ''
+PASSWORD_RESET_TIMEOUT_DAYS = 7
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
@@ -137,12 +150,18 @@ USE_L10N = True
 
 USE_TZ = True
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+# EMAIL_HOST = 'smtp.sendgrid.net'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'parsifal_app'
+# EMAIL_HOST_PASSWORD = 'mys3cr3tp4ssw0rd'
+# EMAIL_USE_TLS = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-MEDIA_URL = '/MEDIA/'
+MEDIA_URL = '/media/'
 
 # look for static files beyond specific apps
 STATICFILES_DIRS = [
